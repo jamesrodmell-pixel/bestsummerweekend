@@ -1,6 +1,3 @@
-# bestsummerweekend
-This is an extensive cooking site wirh links to affilaite marketing partners. It has 100s of recipes and hints all written by Jane Rodmell, my mother. I will use Jekly for updating and " github pages for serving the pages. IT is a plain site with dynamically driven content with hints and best paractices for chefs of all levels. Have top affiliates.
-
 # Best Summer Weekend Cookbook
 
 A data-driven web app and bundled-shell base for a hybrid Apple/Android app.
@@ -41,4 +38,3 @@ Reference material kept with the project, not part of the live site:
 - Deeper per-chapter hint pools.
 - The MySQL database that generates `recipes.json`.
 - A proper herb close-up for the Herbs hero (currently a stand-in).
-

@@ -1,0 +1,29 @@
+# Best Summer Weekend Cookbook — Netlify config
+# Drop this in the same folder as index.html.
+
+[build]
+  publish = "."
+  command = ""          # pure static site, no build step
+
+# Always serve the freshest data feed so the site updates as you re-upload it.
+[[headers]]
+  for = "/recipes.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Photos and the stamp rarely change — let them cache hard for speed.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"   # 7 days
+
+[[headers]]
+  for = "/stamp.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# The shell itself: revalidate so layout/code fixes deploy immediately.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
