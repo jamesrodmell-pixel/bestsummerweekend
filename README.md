@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28967105/README.md)
 # Best Summer Weekend Cookbook
 
 A data-driven web app and bundled-shell base for a hybrid Apple/Android app.
